@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CD27540503316A3E03EEBCC /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB1E3BCC3D98264EC0DEAA0 /* BuddyBuildSDK.framework */; };
+		6C42569E651CA592C321CCB3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618E492906638A2EC3D784EF /* AssetsLibrary.framework */; };
 		83A72F3E1AFA88D500A41E80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A72F3D1AFA88D500A41E80 /* main.m */; };
 		83A72F411AFA88D500A41E80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A72F401AFA88D500A41E80 /* AppDelegate.m */; };
 		83A72F441AFA88D500A41E80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A72F431AFA88D500A41E80 /* ViewController.m */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		618E492906638A2EC3D784EF /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6DB1E3BCC3D98264EC0DEAA0 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		83A72F381AFA88D500A41E80 /* BestAppEver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestAppEver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A72F3C1AFA88D500A41E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A72F3D1AFA88D500A41E80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD27540503316A3E03EEBCC /* BuddyBuildSDK.framework in Frameworks */,
+				6C42569E651CA592C321CCB3 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				83A72F3A1AFA88D500A41E80 /* BestAppEver */,
 				83A72F541AFA88D500A41E80 /* BestAppEverTests */,
 				83A72F391AFA88D500A41E80 /* Products */,
+				E55B5BB4CFB7CF456ADF887F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +124,15 @@
 				83A72F561AFA88D500A41E80 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E55B5BB4CFB7CF456ADF887F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DB1E3BCC3D98264EC0DEAA0 /* BuddyBuildSDK.framework */,
+				618E492906638A2EC3D784EF /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +366,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BestAppEver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +383,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BestAppEver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
