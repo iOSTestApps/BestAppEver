@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031E907AFBFDEA9E1BCF2864 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B694F15879A4FA9A3BEC918A /* AssetsLibrary.framework */; };
 		83A72F3E1AFA88D500A41E80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A72F3D1AFA88D500A41E80 /* main.m */; };
 		83A72F411AFA88D500A41E80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A72F401AFA88D500A41E80 /* AppDelegate.m */; };
 		83A72F441AFA88D500A41E80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A72F431AFA88D500A41E80 /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		83A72F491AFA88D500A41E80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A72F481AFA88D500A41E80 /* Images.xcassets */; };
 		83A72F4C1AFA88D500A41E80 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A72F4A1AFA88D500A41E80 /* LaunchScreen.xib */; };
 		83A72F581AFA88D500A41E80 /* BestAppEverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A72F571AFA88D500A41E80 /* BestAppEverTests.m */; };
+		C8D2E0F0E75FC91D2D606702 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939C4A70F4ABF2519B738599 /* CoreText.framework */; };
+		ED52B1216E91ECE16C5B412C /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9B38C0BE09048001938E77 /* BuddyBuildSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		83A72F511AFA88D500A41E80 /* BestAppEverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestAppEverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A72F561AFA88D500A41E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A72F571AFA88D500A41E80 /* BestAppEverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BestAppEverTests.m; sourceTree = "<group>"; };
+		939C4A70F4ABF2519B738599 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9E9B38C0BE09048001938E77 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		B694F15879A4FA9A3BEC918A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED52B1216E91ECE16C5B412C /* BuddyBuildSDK.framework in Frameworks */,
+				031E907AFBFDEA9E1BCF2864 /* AssetsLibrary.framework in Frameworks */,
+				C8D2E0F0E75FC91D2D606702 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,7 @@
 				83A72F3A1AFA88D500A41E80 /* BestAppEver */,
 				83A72F541AFA88D500A41E80 /* BestAppEverTests */,
 				83A72F391AFA88D500A41E80 /* Products */,
+				AA6DBF33ECC38A5588A9B308 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +127,16 @@
 				83A72F561AFA88D500A41E80 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA6DBF33ECC38A5588A9B308 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B38C0BE09048001938E77 /* BuddyBuildSDK.framework */,
+				B694F15879A4FA9A3BEC918A /* AssetsLibrary.framework */,
+				939C4A70F4ABF2519B738599 /* CoreText.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +370,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BestAppEver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +387,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BestAppEver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
